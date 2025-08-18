@@ -1,0 +1,36 @@
+
+$primary-font : 'Inter', sans-serif;;
+$secondary-font : 'Inter', sans-serif;;
+
+$basic-size : 16px;
+$sec-spacing: 140px 0;
+$sec-spacing2: 155px 0;
+
+$para-color: #4b4b4b;
+$primary-color: #ff3d36;
+$heading-color: #004867;
+$bg-color: #3a5661;
+
+@mixin transition($property) {
+	-webkit-transition: $property;
+	-ms-transition: $property;
+	transition: $property;
+}
+
+@mixin transform($property) {
+	-webkit-transform: $property;
+	-ms-transform: $property;
+	transform: $property;
+}
+
+@mixin boxshadow($property) {
+	-webkit-box-shadow: $property;
+	-ms-box-shadow: $property;
+	box-shadow: $property;
+}
+
+@mixin radius($property) {
+	-webkit-border-radius: $property;
+	-ms-border-radius: $property;
+	border-radius: $property;
+}
