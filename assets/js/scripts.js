@@ -1,15 +1,4 @@
-/**
- * CCGE HTML Template
- * CCGE School HTML Template has been specially designed with your learning community in mind.
- * Exclusively on https://1.envato.market/tf-merkulove
- *
- * @encoding        UTF-8
- * @version         1.0.1
- * @copyright       (C) 2018 - 2021 Merkulove ( https://merkulov.design/ ). All rights reserved.
- * @license         Envato License https://1.envato.market/KYbje
- * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
- * @support         help@merkulov.design
- **/
+
 
 ( function ( $ ) {
 
@@ -126,37 +115,51 @@
 
             $('#submit').on("click", function() {
 
-                var o = new Object();
                 var form = '#contact-form';
-                var name = $('#contact-form .name').val();
-                var email = $('#contact-form .email').val();
+                var name = $('#contact-form .name').val().trim();
+                var email = $('#contact-form .email').val().trim();
+                var message = $('#contact-form textarea[name="message"]').val().trim();
 
-                if(name == '' || email == '') {
+                // Clear previous responses
+                $('#contact-form .response').html('');
 
-                    $('#contact-form .response').html('<div class="failed">Please fill the required fields.</div>');
+                // Validate required fields
+                if(name == '' || email == '' || message == '') {
+                    $('#contact-form .response').html('<div class="failed">Please fill all required fields.</div>');
                     return false;
-
                 }
 
-                $.ajax( {
+                // Validate email format
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if(!emailRegex.test(email)) {
+                    $('#contact-form .response').html('<div class="failed">Please enter a valid email address.</div>');
+                    return false;
+                }
 
+                // Disable submit button to prevent double submission
+                $('#submit').prop('disabled', true).text('Sending...');
+
+                $.ajax( {
                     url:"mail.php",
                     method:"POST",
                     data: $(form).serialize(),
                     beforeSend:function(){
-                        $('#contact-form .response').html('<div class="text-info"><img src="assets/img/preloader.gif" alt="Loading..."> Loading...</div>');
+                        $('#contact-form .response').html('<div class="text-info"><img src="assets/img/preloader.gif" alt="Loading..."> Sending your message...</div>');
                     },
                     success:function(data){
                         $('form').trigger("reset");
                         $('#contact-form .response').fadeIn().html(data);
                         setTimeout(function(){
                             $('#contact-form .response').fadeOut("slow");
-                        }, 5000);
+                        }, 8000);
                     },
                     error:function(){
-                        $('#contact-form .response').fadeIn().html(data);
+                        $('#contact-form .response').fadeIn().html('<div class="failed">Sorry, there was an error. Please try again later.</div>');
+                    },
+                    complete:function(){
+                        // Re-enable submit button
+                        $('#submit').prop('disabled', false).html('Send Now <i class="fa fa-long-arrow-alt-right"></i>');
                     }
-
                 } );
 
             } );

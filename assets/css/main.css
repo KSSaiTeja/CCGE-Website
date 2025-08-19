@@ -2575,6 +2575,14 @@ footer .bottom-footer .social-links {
     margin-bottom: 20px;
     color: #fff !important;
 }
+
+.success {
+    background: #28a745;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff !important;
+    border-radius: 5px;
+}
 .failed img,
 .text-info img {
     margin-right: 10px;
