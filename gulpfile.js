@@ -1,7 +1,7 @@
 /**
  * CCGE - Corporate Commerce Global Education
  * Gulp Build System
- * Developed by: kssaiteja (saitej4865@gmail.com)
+ * Developed by: kssaiteja (info@corporatecommerce.in)
  * 
  * This build system handles SCSS compilation, JS minification, and image optimization
  * for the CCGE finance education website.

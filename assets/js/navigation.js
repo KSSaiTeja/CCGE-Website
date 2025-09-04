@@ -1,7 +1,7 @@
 /**
  * CCGE - Corporate Commerce Global Education
  * Navigation Active State Management
- * Developed by: kssaiteja (saitej4865@gmail.com)
+ * Developed by: kssaiteja (info@corporatecommerce.in)
  * 
  * This script manages the active state of navigation links based on the current page.
  */

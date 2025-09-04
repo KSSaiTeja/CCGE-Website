@@ -2,19 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>CCGE - Corporate Commerce Global Education | Finance Certifications</title>
+    <title>
+      CCGE - Corporate Commerce Global Education | Finance Certifications
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="CCGE - India's premier finance education institute offering ACCA, CFA, CMA, CPA, FRM, ESG, Investment Banking, and DipIFRS certifications. Expert-led courses with global placement support." />
+    <meta
+      name="description"
+      content="CCGE - India's premier finance education institute offering ACCA, CFA, CMA, CPA, FRM, ESG, Investment Banking, and DipIFRS certifications. Expert-led courses with global placement support."
+    />
     <meta name="author" content="kssaiteja" />
-    <meta name="keywords" content="CCGE, finance certifications, ACCA, CFA, CMA, CPA, FRM, ESG, investment banking, DipIFRS, finance education, global certifications, accounting courses" />
+    <meta
+      name="keywords"
+      content="CCGE, finance certifications, ACCA, CFA, CMA, CPA, FRM, ESG, investment banking, DipIFRS, finance education, global certifications, accounting courses"
+    />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="CCGE - Corporate Commerce Global Education | Finance Certifications" />
-    <meta property="og:description" content="India's premier finance education institute offering ACCA, CFA, CMA, CPA, FRM, ESG, Investment Banking, and DipIFRS certifications." />
+    <meta
+      property="og:title"
+      content="CCGE - Corporate Commerce Global Education | Finance Certifications"
+    />
+    <meta
+      property="og:description"
+      content="India's premier finance education institute offering ACCA, CFA, CMA, CPA, FRM, ESG, Investment Banking, and DipIFRS certifications."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ccge.in" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="CCGE - Corporate Commerce Global Education" />
-    <meta name="twitter:description" content="India's premier finance education institute offering global certifications." />
+    <meta
+      name="twitter:title"
+      content="CCGE - Corporate Commerce Global Education"
+    />
+    <meta
+      name="twitter:description"
+      content="India's premier finance education institute offering global certifications."
+    />
     <link rel="canonical" href="https://ccge.in" />
     <link rel="icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
@@ -35,7 +55,7 @@
       .search-form {
         position: relative;
       }
-      
+
       .search-results {
         position: absolute;
         top: 100%;
@@ -45,56 +65,181 @@
         border: 1px solid #ddd;
         border-top: none;
         border-radius: 0 0 5px 5px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         max-height: 300px;
         overflow-y: auto;
         z-index: 1000;
         display: none;
       }
-      
+
       .search-results.show {
         display: block;
       }
-      
+
       .search-result-item {
         padding: 12px 15px;
         border-bottom: 1px solid #f0f0f0;
         cursor: pointer;
         transition: background-color 0.2s ease;
       }
-      
+
       .search-result-item:hover {
         background-color: #f8f9fa;
       }
-      
+
       .search-result-item:last-child {
         border-bottom: none;
       }
-      
+
       .search-result-item a {
         color: #333;
         text-decoration: none;
         display: block;
       }
-      
+
       .search-result-item a:hover {
         color: #007bff;
       }
-      
+
       .no-results {
         padding: 15px;
         text-align: center;
         color: #666;
       }
-      
+
       .no-results a {
         color: #007bff;
         text-decoration: none;
         font-weight: 500;
       }
-      
+
       .no-results a:hover {
         text-decoration: underline;
+      }
+
+      /* Simplified Stat Cards */
+      .stat-card-simple {
+        background: white;
+        border-radius: 12px;
+        padding: 25px 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        border: 1px solid #f0f0f0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 180px;
+      }
+
+      /* Stats section layout */
+      .stats-section {
+        padding: 60px 0;
+      }
+
+      .stats-section .section-title p {
+        max-width: 720px;
+        margin: 0 auto 10px;
+      }
+
+      .stat-card-simple:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .stat-icon-wrapper {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+      }
+
+      .stat-card-simple:hover .stat-icon-wrapper {
+        transform: scale(1.1);
+      }
+
+      .stat-icon-wrapper i {
+        color: white;
+        font-size: 24px;
+      }
+
+      .stat-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .stat-number {
+        font-size: 28px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 8px;
+        line-height: 1.2;
+      }
+
+      .stat-label {
+        font-size: 14px;
+        color: #666;
+        font-weight: 500;
+        line-height: 1.3;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .stat-card-simple {
+          min-height: 160px;
+          padding: 20px 15px;
+        }
+
+        .stat-icon-wrapper {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 15px;
+        }
+
+        .stat-icon-wrapper i {
+          font-size: 20px;
+        }
+
+        .stat-number {
+          font-size: 24px;
+        }
+
+        .stat-label {
+          font-size: 13px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .stat-card-simple {
+          min-height: 140px;
+          padding: 15px 10px;
+        }
+
+        .stat-icon-wrapper {
+          width: 45px;
+          height: 45px;
+          margin-bottom: 12px;
+        }
+
+        .stat-icon-wrapper i {
+          font-size: 18px;
+        }
+
+        .stat-number {
+          font-size: 22px;
+        }
+
+        .stat-label {
+          font-size: 12px;
+        }
       }
     </style>
     <script>
@@ -128,9 +273,9 @@
               <div class="logo">
                 <a href="index.html" title="">
                   <img
-                    src="assets/img/CCGE Final Logo.png"
+                    src="assets/img/ccge-final-logo.png"
                     alt="CCGE - Corporate Commerce Global Education"
-                    style="max-height: 60px; width: auto;"
+                    style="max-height: 60px; width: auto"
                   />
                 </a>
               </div>
@@ -138,17 +283,25 @@
               <ul class="contact-add d-flex flex-wrap">
                 <li>
                   <div class="contact-info">
-                    <img src="assets/img/icon1.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                    <img
+                      src="assets/img/icon1.png"
+                      alt="CCGE - Corporate Commerce Global Education"
+                      style="max-height: 50px; width: auto; margin-bottom: 15px"
+                    />
                     <div class="contact-tt">
                       <h4>Call</h4>
-                      <span>+91 7022878870</span>
+                      <span>96666 60713 / 14</span>
                     </div>
                   </div>
                   <!--contact-info end-->
                 </li>
                 <li>
                   <div class="contact-info">
-                    <img src="assets/img/icon2.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                    <img
+                      src="assets/img/icon2.png"
+                      alt="CCGE - Corporate Commerce Global Education"
+                      style="max-height: 50px; width: auto; margin-bottom: 15px"
+                    />
                     <div class="contact-tt">
                       <h4>Work Time</h4>
                       <span>Mon - Sat 9 AM - 7 PM</span>
@@ -158,10 +311,17 @@
                 </li>
                 <li>
                   <div class="contact-info">
-                    <img src="assets/img/icon3.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                    <img
+                      src="assets/img/icon3.png"
+                      alt="CCGE - Corporate Commerce Global Education"
+                      style="max-height: 50px; width: auto; margin-bottom: 15px"
+                    />
                     <div class="contact-tt">
                       <h4>Address</h4>
-                      <span>Mumbai, Delhi, Pune, Bangalore</span>
+                      <span
+                        >Opp. Madhura Nagar Metro Station, Beside SBI Bank Lane,
+                        Ameerpet.</span
+                      >
                     </div>
                   </div>
                   <!--contact-info end-->
@@ -186,15 +346,43 @@
                   <li>
                     <a href="classes.html" title="">Courses</a>
                     <ul>
-                      <li><a href="class-single-acca.html" title="">ACCA Course</a></li>
-                      <li><a href="class-single-cfa.html" title="">CFA Course</a></li>
-                      <li><a href="class-single-cma.html" title="">CMA Course</a></li>
-                      <li><a href="class-single-cpa.html" title="">CPA Course</a></li>
-                      <li><a href="class-single-frm.html" title="">FRM Course</a></li>
-                      <li><a href="class-single-esg.html" title="">ESG Course</a></li>
-                      <li><a href="class-single-investment-banking.html" title="">Investment Banking Operations</a></li>
-                      <li><a href="class-single-global-investment-banking.html" title="">Global Investment Banking</a></li>
-                      <li><a href="class-single-dipifrs.html" title="">DipIFRS Course</a></li>
+                      <li>
+                        <a href="class-single-acca.html" title=""
+                          >ACCA Course</a
+                        >
+                      </li>
+                      <li>
+                        <a href="class-single-cfa.html" title="">CFA Course</a>
+                      </li>
+                      <li>
+                        <a href="class-single-cma.html" title="">CMA Course</a>
+                      </li>
+                      <li>
+                        <a href="class-single-cpa.html" title="">CPA Course</a>
+                      </li>
+                      <li>
+                        <a href="class-single-frm.html" title="">FRM Course</a>
+                      </li>
+                      <li>
+                        <a href="class-single-esg.html" title="">ESG Course</a>
+                      </li>
+                      <li>
+                        <a href="class-single-investment-banking.html" title=""
+                          >Investment Banking Operations</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="class-single-global-investment-banking.html"
+                          title=""
+                          >Global Investment Banking</a
+                        >
+                      </li>
+                      <li>
+                        <a href="class-single-dipifrs.html" title=""
+                          >DipIFRS Course</a
+                        >
+                      </li>
                     </ul>
                   </li>
 
@@ -239,10 +427,12 @@
                 >
                   <h2>Master Global Finance <span>Excellence</span></h2>
                   <p>
-                    Gain the skills employers are looking for. CCGE empowers ambitious professionals 
-                    to achieve global finance certifications with industry-leading success rates. 
-                    Our comprehensive programs in EA, ACCA, CFA, CMA, CPA, FRM, and ESG prepare 
-                    you for international career opportunities with guaranteed placement support.
+                    Gain the skills employers are looking for. CCGE empowers
+                    ambitious professionals to achieve global finance
+                    certifications with industry-leading success rates. Our
+                    comprehensive programs in EA, ACCA, CFA, CMA, CPA, FRM, and
+                    ESG prepare you for international career opportunities with
+                    guaranteed placement support.
                   </p>
                   <form class="search-form" id="searchForm">
                     <input
@@ -258,13 +448,28 @@
                 </div>
               </div>
               <div class="col-lg-5 col-md-5">
-                <div class="banner-img wow zoomIn" data-wow-duration="1000ms">
-                  <img src="https://via.placeholder.com/497x586" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                <div
+                  class="banner-img wow zoomIn"
+                  data-wow-duration="1000ms"
+                  style="position: relative; z-index: 2"
+                >
+                  <img
+                    src="assets/images/hero-banner.png"
+                    alt="CCGE - Corporate Commerce Global Education"
+                    style="
+                      max-width: 100%;
+                      height: auto;
+                      border-radius: 50%;
+                      object-fit: cover;
+                      aspect-ratio: 1/1;
+                    "
+                  />
                 </div>
                 <!--banner-img end-->
                 <div
                   class="elements-bg wow zoomIn"
                   data-wow-duration="1000ms"
+                  style="z-index: 1"
                 ></div>
               </div>
             </div>
@@ -281,9 +486,11 @@
           <div class="section-title text-center">
             <h2>Welcome to <span>CCGE</span></h2>
             <p>
-              Based in Hyderabad, CCGE is dedicated to empowering finance and accounting professionals 
-              to reach new heights in their careers. Our mission is to provide accessible, 
-              industry-relevant education that bridges the gap between academic knowledge and real-world application.
+              Based in Hyderabad, CCGE is dedicated to empowering finance and
+              accounting professionals to reach new heights in their careers.
+              Our mission is to provide accessible, industry-relevant education
+              that bridges the gap between academic knowledge and real-world
+              application.
             </p>
           </div>
           <!--section-title end-->
@@ -292,11 +499,16 @@
               <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                   <div class="abt-col wow fadeInUp" data-wow-duration="1000ms">
-                    <img src="assets/img/icon5.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                    <img
+                      src="assets/img/icon5.png"
+                      alt="CCGE - Corporate Commerce Global Education"
+                      style="max-height: 50px; width: auto; margin-bottom: 15px"
+                    />
                     <h3>Professional Faculty</h3>
                     <p>
-                      Learn from seasoned industry professionals and certified trainers 
-                      who bring practical insights and cutting-edge curriculum
+                      Learn from seasoned industry professionals and certified
+                      trainers who bring practical insights and cutting-edge
+                      curriculum
                     </p>
                   </div>
                   <!--abt-col end-->
@@ -307,11 +519,16 @@
                     data-wow-duration="1000ms"
                     data-wow-delay="200ms"
                   >
-                    <img src="assets/img/icon7.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                    <img
+                      src="assets/img/icon7.png"
+                      alt="CCGE - Corporate Commerce Global Education"
+                      style="max-height: 50px; width: auto; margin-bottom: 15px"
+                    />
                     <h3>Global Certifications</h3>
                     <p>
-                      Comprehensive suite of globally recognized certifications including 
-                      EA, ACCA, CFA, CMA, CPA, FRM, and specialized programs in ESG
+                      Comprehensive suite of globally recognized certifications
+                      including EA, ACCA, CFA, CMA, CPA, FRM, and specialized
+                      programs in ESG
                     </p>
                   </div>
                   <!--abt-col end-->
@@ -322,11 +539,16 @@
                     data-wow-duration="1000ms"
                     data-wow-delay="400ms"
                   >
-                    <img src="assets/img/icon8.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                    <img
+                      src="assets/img/icon8.png"
+                      alt="CCGE - Corporate Commerce Global Education"
+                      style="max-height: 50px; width: auto; margin-bottom: 15px"
+                    />
                     <h3>Placement Assistance</h3>
                     <p>
-                      Robust support systems including personalized mentorship, 
-                      extensive study materials, and dedicated placement assistance
+                      Robust support systems including personalized mentorship,
+                      extensive study materials, and dedicated placement
+                      assistance
                     </p>
                   </div>
                   <!--abt-col end-->
@@ -337,11 +559,16 @@
                     data-wow-duration="1000ms"
                     data-wow-delay="600ms"
                   >
-                    <img src="assets/img/icon9.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                    <img
+                      src="assets/img/icon9.png"
+                      alt="CCGE - Corporate Commerce Global Education"
+                      style="max-height: 50px; width: auto; margin-bottom: 15px"
+                    />
                     <h3>24/7 Learning Support</h3>
                     <p>
-                      Focus on not just certification, but true skill development 
-                      and job readiness with comprehensive study materials and support
+                      Focus on not just certification, but true skill
+                      development and job readiness with comprehensive study
+                      materials and support
                     </p>
                   </div>
                   <!--abt-col end-->
@@ -350,100 +577,7 @@
             </div>
           </div>
           <!--about-rw end-->
-          <div class="abt-img">
-            <ul class="masonary">
-              <li class="width1 wow zoomIn" data-wow-duration="1000ms">
-                <a
-                  href="https://via.placeholder.com/1414x943"
-                  data-group="set1"
-                  title=""
-                  class="html5lightbox"
-                  ><img src="https://via.placeholder.com/1414x943" alt=""
-                /></a>
-              </li>
-              <li class="width2 wow zoomIn" data-wow-duration="1000ms">
-                <a
-                  href="https://via.placeholder.com/1440x961"
-                  data-group="set1"
-                  title=""
-                  class="html5lightbox"
-                  ><img src="https://via.placeholder.com/1440x961" alt=""
-                /></a>
-              </li>
-              <li class="width3 wow zoomIn" data-wow-duration="1000ms">
-                <a
-                  href="https://via.placeholder.com/2064x1376"
-                  data-group="set1"
-                  title=""
-                  class="html5lightbox"
-                  ><img src="https://via.placeholder.com/2064x1376" alt=""
-                /></a>
-              </li>
-              <li class="width4 wow zoomIn" data-wow-duration="1000ms">
-                <a
-                  href="https://via.placeholder.com/1504x1004"
-                  data-group="set1"
-                  title=""
-                  class="html5lightbox"
-                  ><img src="https://via.placeholder.com/1504x1004" alt=""
-                /></a>
-              </li>
-              <li class="width5 wow zoomIn" data-wow-duration="1000ms">
-                <a
-                  href="https://via.placeholder.com/1440x960"
-                  data-group="set1"
-                  title=""
-                  class="html5lightbox"
-                  ><img src="https://via.placeholder.com/1440x960" alt=""
-                /></a>
-              </li>
-              <li class="width6 wow zoomIn" data-wow-duration="1000ms">
-                <a
-                  href="https://via.placeholder.com/1393x929"
-                  data-group="set1"
-                  title=""
-                  class="html5lightbox"
-                  ><img src="https://via.placeholder.com/1393x929" alt=""
-                /></a>
-              </li>
-              <li class="width7 wow zoomIn" data-wow-duration="1000ms">
-                <a
-                  href="https://via.placeholder.com/1840x1228"
-                  data-group="set1"
-                  title=""
-                  class="html5lightbox"
-                  ><img src="https://via.placeholder.com/1840x1228" alt=""
-                /></a>
-              </li>
-              <li class="width8 wow zoomIn" data-wow-duration="1000ms">
-                <a
-                  href="https://via.placeholder.com/1404x936"
-                  data-group="set1"
-                  title=""
-                  class="html5lightbox"
-                  ><img src="https://via.placeholder.com/1404x936" alt=""
-                /></a>
-              </li>
-              <li class="width9 wow zoomIn" data-wow-duration="1000ms">
-                <a
-                  href="https://via.placeholder.com/750x502"
-                  data-group="set1"
-                  title=""
-                  class="html5lightbox"
-                  ><img src="https://via.placeholder.com/750x502" alt=""
-                /></a>
-              </li>
-              <li class="width10 wow zoomIn" data-wow-duration="1000ms">
-                <a
-                  href="https://via.placeholder.com/1500x1000"
-                  data-group="set1"
-                  title=""
-                  class="html5lightbox"
-                  ><img src="https://via.placeholder.com/1500x1000" alt=""
-                /></a>
-              </li>
-            </ul>
-          </div>
+
           <!-- abt-img end-->
         </div>
       </section>
@@ -464,27 +598,48 @@
             <div class="row">
               <!-- ACCA -->
               <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="classes-col wow fadeInUp" data-wow-duration="1000ms">
+                <div
+                  class="classes-col wow fadeInUp"
+                  data-wow-duration="1000ms"
+                >
                   <div class="class-thumb">
-                    <img src="https://via.placeholder.com/1680x1120" alt="" class="w-100" />
-                    <a href="contacts.html" title="" class="crt-btn">
-                      <img src="assets/img/icon10.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
-                    </a>
+                    <img
+                      src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1680&h=1120&q=80"
+                      alt="ACCA course accounting desk"
+                      class="w-100"
+                    />
+                    <a href="contacts.html" title="" class="crt-btn"> </a>
                   </div>
                   <div class="class-info">
-                    <h3><a href="class-single.html" title="">ACCA - Association of Chartered Certified Accountants</a></h3>
+                    <h3>
+                      <a href="class-single.html" title=""
+                        >ACCA - Association of Chartered Certified
+                        Accountants</a
+                      >
+                    </h3>
                     <span>Duration: 1.5-3 Years</span>
                     <span>Weekend, Weekday, Self-Placed</span>
-                    <p>ACCA course equips students with global accounting and finance expertise, opening doors to a range of career opportunities worldwide. Join 200,000+ professionals globally.</p>
+                    <p>
+                      ACCA course equips students with global accounting and
+                      finance expertise, opening doors to a range of career
+                      opportunities worldwide. Join 200,000+ professionals
+                      globally.
+                    </p>
                     <div class="d-flex flex-wrap align-items-center">
                       <div class="posted-by">
-                        <img src="https://via.placeholder.com/26x26" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
                         <a href="#" title="">ACCA Professionals</a>
                       </div>
                     </div>
                     <div class="course-actions">
-                      <a href="class-single-acca.html" class="btn-text">Know More</a>
-                      <a href="#" class="btn-default get-brochure-btn" data-course="ACCA - Association of Chartered Certified Accountants"><span>Get Brochure</span></a>
+                      <a href="class-single-acca.html" class="btn-text"
+                        >Know More</a
+                      >
+                      <a
+                        href="#"
+                        class="btn-default get-brochure-btn"
+                        data-course="ACCA - Association of Chartered Certified Accountants"
+                        ><span>Get Brochure</span></a
+                      >
                     </div>
                   </div>
                 </div>
@@ -492,27 +647,48 @@
 
               <!-- CFA -->
               <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
+                <div
+                  class="classes-col wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="200ms"
+                >
                   <div class="class-thumb">
-                    <img src="https://via.placeholder.com/1970x1326" alt="" class="w-100" />
-                    <a href="contacts.html" title="" class="crt-btn">
-                      <img src="assets/img/icon10.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
-                    </a>
+                    <img
+                      src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=1970&h=1326&q=80"
+                      alt="CFA charts and analytics on laptop"
+                      class="w-100"
+                    />
+                    <a href="contacts.html" title="" class="crt-btn"> </a>
                   </div>
                   <div class="class-info">
-                    <h3><a href="class-single.html" title="">CFA - Chartered Financial Analyst</a></h3>
+                    <h3>
+                      <a href="class-single.html" title=""
+                        >CFA - Chartered Financial Analyst</a
+                      >
+                    </h3>
                     <span>Duration: 2-3 Years</span>
                     <span>Weekend, Weekday, Self-Placed</span>
-                    <p>The CFA program prepares students for a career in investment management and financial analysis, with a globally recognized curriculum. Join the elite 1% of finance professionals.</p>
+                    <p>
+                      The CFA program prepares students for a career in
+                      investment management and financial analysis, with a
+                      globally recognized curriculum. Join the elite 1% of
+                      finance professionals.
+                    </p>
                     <div class="d-flex flex-wrap align-items-center">
                       <div class="posted-by">
-                        <img src="https://via.placeholder.com/26x26" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
                         <a href="#" title="">CFA Charterholders</a>
                       </div>
                     </div>
                     <div class="course-actions">
-                      <a href="class-single-cfa.html" class="btn-text">Know More</a>
-                      <a href="#" class="btn-default get-brochure-btn" data-course="CFA - Chartered Financial Analyst"><span>Get Brochure</span></a>
+                      <a href="class-single-cfa.html" class="btn-text"
+                        >Know More</a
+                      >
+                      <a
+                        href="#"
+                        class="btn-default get-brochure-btn"
+                        data-course="CFA - Chartered Financial Analyst"
+                        ><span>Get Brochure</span></a
+                      >
                     </div>
                   </div>
                 </div>
@@ -520,27 +696,48 @@
 
               <!-- CMA -->
               <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+                <div
+                  class="classes-col wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="400ms"
+                >
                   <div class="class-thumb">
-                    <img src="https://via.placeholder.com/1440x960" alt="" class="w-100" />
-                    <a href="contacts.html" title="" class="crt-btn">
-                      <img src="assets/img/icon10.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
-                    </a>
+                    <img
+                      src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-4.0.3&auto=format&fit=crop&w=1440&h=960&q=80"
+                      alt="CMA management accounting graphs"
+                      class="w-100"
+                    />
+                    <a href="contacts.html" title="" class="crt-btn"> </a>
                   </div>
                   <div class="class-info">
-                    <h3><a href="class-single.html" title="">CMA - Certified Management Accountant</a></h3>
+                    <h3>
+                      <a href="class-single.html" title=""
+                        >CMA - Certified Management Accountant</a
+                      >
+                    </h3>
                     <span>Duration: 6-9 Months</span>
                     <span>Weekend, Weekday</span>
-                    <p>US CMA course is a globally accepted management accounting qualification offered by the Institute for Management Accountants, USA. Fast-track your career in strategic finance.</p>
+                    <p>
+                      US CMA course is a globally accepted management accounting
+                      qualification offered by the Institute for Management
+                      Accountants, USA. Fast-track your career in strategic
+                      finance.
+                    </p>
                     <div class="d-flex flex-wrap align-items-center">
                       <div class="posted-by">
-                        <img src="https://via.placeholder.com/26x26" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
                         <a href="#" title="">CMA Professionals</a>
                       </div>
                     </div>
                     <div class="course-actions">
-                      <a href="class-single-cma.html" class="btn-text">Know More</a>
-                      <a href="#" class="btn-default get-brochure-btn" data-course="CMA - Certified Management Accountant"><span>Get Brochure</span></a>
+                      <a href="class-single-cma.html" class="btn-text"
+                        >Know More</a
+                      >
+                      <a
+                        href="#"
+                        class="btn-default get-brochure-btn"
+                        data-course="CMA - Certified Management Accountant"
+                        ><span>Get Brochure</span></a
+                      >
                     </div>
                   </div>
                 </div>
@@ -548,27 +745,47 @@
 
               <!-- CPA -->
               <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div
+                  class="classes-col wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="600ms"
+                >
                   <div class="class-thumb">
-                    <img src="https://via.placeholder.com/1296x864" alt="" class="w-100" />
-                    <a href="contacts.html" title="" class="crt-btn">
-                      <img src="assets/img/icon10.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
-                    </a>
+                    <img
+                      src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?ixlib=rb-4.0.3&auto=format&fit=crop&w=1296&h=864&q=80"
+                      alt="CPA audit and financial statements"
+                      class="w-100"
+                    />
+                    <a href="contacts.html" title="" class="crt-btn"> </a>
                   </div>
                   <div class="class-info">
-                    <h3><a href="class-single.html" title="">CPA - Certified Public Accountant</a></h3>
+                    <h3>
+                      <a href="class-single.html" title=""
+                        >CPA - Certified Public Accountant</a
+                      >
+                    </h3>
                     <span>Duration: 1 Year</span>
                     <span>Weekday & Weekend</span>
-                    <p>CPA is a globally recognized Chartered Accountancy course by AICPA, USA. It offers excellent career opportunities in India and abroad in accounting, auditing, and finance.</p>
+                    <p>
+                      CPA is a globally recognized Chartered Accountancy course
+                      by AICPA, USA. It offers excellent career opportunities in
+                      India and abroad in accounting, auditing, and finance.
+                    </p>
                     <div class="d-flex flex-wrap align-items-center">
                       <div class="posted-by">
-                        <img src="https://via.placeholder.com/26x26" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
                         <a href="#" title="">CPA Professionals</a>
                       </div>
                     </div>
                     <div class="course-actions">
-                      <a href="class-single-cpa.html" class="btn-text">Know More</a>
-                      <a href="#" class="btn-default get-brochure-btn" data-course="CPA - Certified Public Accountant"><span>Get Brochure</span></a>
+                      <a href="class-single-cpa.html" class="btn-text"
+                        >Know More</a
+                      >
+                      <a
+                        href="#"
+                        class="btn-default get-brochure-btn"
+                        data-course="CPA - Certified Public Accountant"
+                        ><span>Get Brochure</span></a
+                      >
                     </div>
                   </div>
                 </div>
@@ -585,7 +802,144 @@
       </section>
       <!--classes-section end-->
 
-      <section class="teachers-section">
+      <!-- STATS about CCGE -->
+      <section class="stats-section">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>CCGE at a Glance</h2>
+            <p>
+              Quick highlights about CCGE's outcomes, reach, and student
+              experience.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div
+                class="stat-card-simple wow zoomIn"
+                data-wow-duration="1000ms"
+              >
+                <div class="stat-icon-wrapper" style="background: #667eea">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number">2000+</div>
+                  <div class="stat-label">Students Trained</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div
+                class="stat-card-simple wow zoomIn"
+                data-wow-duration="1000ms"
+                data-wow-delay="100ms"
+              >
+                <div class="stat-icon-wrapper" style="background: #f093fb">
+                  <i class="fas fa-certificate"></i>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number">95%</div>
+                  <div class="stat-label">Pass Rate</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div
+                class="stat-card-simple wow zoomIn"
+                data-wow-duration="1000ms"
+                data-wow-delay="200ms"
+              >
+                <div class="stat-icon-wrapper" style="background: #4facfe">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number">9</div>
+                  <div class="stat-label">Global Certifications</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div
+                class="stat-card-simple wow zoomIn"
+                data-wow-duration="1000ms"
+                data-wow-delay="300ms"
+              >
+                <div class="stat-icon-wrapper" style="background: #43e97b">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number">50+</div>
+                  <div class="stat-label">Expert Faculty</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div
+                class="stat-card-simple wow zoomIn"
+                data-wow-duration="1000ms"
+                data-wow-delay="400ms"
+              >
+                <div class="stat-icon-wrapper" style="background: #fa709a">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number">85%</div>
+                  <div class="stat-label">Placement Success</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div
+                class="stat-card-simple wow zoomIn"
+                data-wow-duration="1000ms"
+                data-wow-delay="500ms"
+              >
+                <div class="stat-icon-wrapper" style="background: #a8edea">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number">24/7</div>
+                  <div class="stat-label">Learning Support</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div
+                class="stat-card-simple wow zoomIn"
+                data-wow-duration="1000ms"
+                data-wow-delay="600ms"
+              >
+                <div class="stat-icon-wrapper" style="background: #ffecd2">
+                  <i class="fas fa-building"></i>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number">4</div>
+                  <div class="stat-label">Cities Across India</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div
+                class="stat-card-simple wow zoomIn"
+                data-wow-duration="1000ms"
+                data-wow-delay="700ms"
+              >
+                <div class="stat-icon-wrapper" style="background: #d299c2">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number">4.8</div>
+                  <div class="stat-label">Student Rating</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- STATS about CCGE end -->
+
+      <!-- Our Awesome Teachers -->
+
+      <!-- <section class="teachers-section">
         <div class="container">
           <div class="section-title text-center">
             <h2>
@@ -597,9 +951,9 @@
               bibendum justo eget, lacinia dui. Donec ligula ligula, elementum
               sit amet
             </p>
-          </div>
-          <!--section-title end-->
-          <div class="teachers">
+          </div> -->
+      <!--section-title end-->
+      <!-- <div class="teachers">
             <div class="row">
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
@@ -627,7 +981,16 @@
                           ></a>
                         </li>
                       </ul>
-                      <span><img src="assets/img/plus.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" /></span>
+                      <span
+                        ><img
+                          src="assets/img/plus.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                      /></span>
                     </div>
                   </div>
                   <div class="teacher-info">
@@ -636,9 +999,9 @@
                     </h3>
                     <span>English Teacher</span>
                   </div>
-                </div>
-                <!--teacher end-->
-              </div>
+                </div> -->
+      <!--teacher end-->
+      <!-- </div>
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
                   <div class="teacher-img">
@@ -665,7 +1028,16 @@
                           ></a>
                         </li>
                       </ul>
-                      <span><img src="assets/img/plus.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" /></span>
+                      <span
+                        ><img
+                          src="assets/img/plus.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                      /></span>
                     </div>
                   </div>
                   <div class="teacher-info">
@@ -674,9 +1046,9 @@
                     </h3>
                     <span>Instructor</span>
                   </div>
-                </div>
-                <!--teacher end-->
-              </div>
+                </div> -->
+      <!--teacher end-->
+      <!-- </div>
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
                   <div class="teacher-img">
@@ -703,7 +1075,16 @@
                           ></a>
                         </li>
                       </ul>
-                      <span><img src="assets/img/plus.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" /></span>
+                      <span
+                        ><img
+                          src="assets/img/plus.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                      /></span>
                     </div>
                   </div>
                   <div class="teacher-info">
@@ -712,9 +1093,9 @@
                     </h3>
                     <span>Art Teacher</span>
                   </div>
-                </div>
-                <!--teacher end-->
-              </div>
+                </div> -->
+      <!--teacher end-->
+      <!-- </div>
               <div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
                 <div class="teacher">
                   <div class="teacher-img">
@@ -741,7 +1122,16 @@
                           ></a>
                         </li>
                       </ul>
-                      <span><img src="assets/img/plus.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" /></span>
+                      <span
+                        ><img
+                          src="assets/img/plus.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                      /></span>
                     </div>
                   </div>
                   <div class="teacher-info">
@@ -750,16 +1140,17 @@
                     </h3>
                     <span>Teacher</span>
                   </div>
-                </div>
-                <!--teacher end-->
-              </div>
+                </div> -->
+      <!--teacher end-->
+      <!-- </div>
             </div>
-          </div>
-          <!--teachers end-->
-        </div>
-      </section>
+          </div> -->
+      <!--teachers end-->
+      <!-- </div>
+      </section> -->
+      <!-- Teachers end -->
 
-      <section class="course-section">
+      <!-- <section class="course-section">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -772,17 +1163,25 @@
                     Lorem ipsum dolor sit
                   </p>
                   <h3>
-                    <img src="assets/img/icon11.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />Call:
+                    <img
+                      src="assets/img/icon11.png"
+                      alt="CCGE - Corporate Commerce Global Education"
+                      style="max-height: 50px; width: auto; margin-bottom: 15px"
+                    />Call:
                     <strong>+2 342 5446 67</strong>
                   </h3>
                 </div>
-                <!--sec-title end-->
+                sec-title end
                 <div class="course-img">
-                  <img src="https://via.placeholder.com/476x526" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                  <img
+                    src="https://via.placeholder.com/476x526"
+                    alt="CCGE - Corporate Commerce Global Education"
+                    style="max-height: 50px; width: auto; margin-bottom: 15px"
+                  />
                 </div>
-                <!--course-img end-->
+                course-img end
               </div>
-              <!--find-course end-->
+              find-course end
             </div>
             <div class="col-lg-6">
               <div class="courses-list">
@@ -793,7 +1192,15 @@
                   <div class="d-flex flex-wrap align-items-center">
                     <ul class="course-meta">
                       <li>
-                        <img src="assets/img/icon12.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                        <img
+                          src="assets/img/icon12.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                        />
                         29/07/2020
                       </li>
                       <li>11AM to 15PM</li>
@@ -807,16 +1214,31 @@
                   </h3>
                   <div class="d-flex flex-wrap">
                     <div class="posted-by">
-                      <img src="https://via.placeholder.com/26x26" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                      <img
+                        src="https://via.placeholder.com/26x26"
+                        alt="CCGE - Corporate Commerce Global Education"
+                        style="
+                          max-height: 50px;
+                          width: auto;
+                          margin-bottom: 15px;
+                        "
+                      />
                       <a href="#" title="">Amanda Kern</a>
                     </div>
                     <span class="locat"
-                      ><img src="assets/img/loct.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />43 castle road
-                      517 district</span
+                      ><img
+                        src="assets/img/loct.png"
+                        alt="CCGE - Corporate Commerce Global Education"
+                        style="
+                          max-height: 50px;
+                          width: auto;
+                          margin-bottom: 15px;
+                        "
+                      />43 castle road 517 district</span
                     >
                   </div>
                 </div>
-                <!--course-card end-->
+                course-card end
                 <div
                   class="course-card wow fadeInLeft"
                   data-wow-duration="1000ms"
@@ -825,7 +1247,15 @@
                   <div class="d-flex flex-wrap align-items-center">
                     <ul class="course-meta">
                       <li>
-                        <img src="assets/img/icon12.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                        <img
+                          src="assets/img/icon12.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                        />
                         29/07/2020
                       </li>
                       <li>11AM to 15PM</li>
@@ -839,16 +1269,31 @@
                   </h3>
                   <div class="d-flex flex-wrap">
                     <div class="posted-by">
-                      <img src="https://via.placeholder.com/26x26" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                      <img
+                        src="https://via.placeholder.com/26x26"
+                        alt="CCGE - Corporate Commerce Global Education"
+                        style="
+                          max-height: 50px;
+                          width: auto;
+                          margin-bottom: 15px;
+                        "
+                      />
                       <a href="#" title="">Cvita Doleschall</a>
                     </div>
                     <span class="locat"
-                      ><img src="assets/img/loct.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />43 castle road
-                      517 district</span
+                      ><img
+                        src="assets/img/loct.png"
+                        alt="CCGE - Corporate Commerce Global Education"
+                        style="
+                          max-height: 50px;
+                          width: auto;
+                          margin-bottom: 15px;
+                        "
+                      />43 castle road 517 district</span
                     >
                   </div>
                 </div>
-                <!--course-card end-->
+                course-card end
                 <div
                   class="course-card wow fadeInLeft"
                   data-wow-duration="1000ms"
@@ -857,7 +1302,15 @@
                   <div class="d-flex flex-wrap align-items-center">
                     <ul class="course-meta">
                       <li>
-                        <img src="assets/img/icon12.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                        <img
+                          src="assets/img/icon12.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                        />
                         29/07/2020
                       </li>
                       <li>11AM to 15PM</li>
@@ -871,18 +1324,33 @@
                   </h3>
                   <div class="d-flex flex-wrap">
                     <div class="posted-by">
-                      <img src="https://via.placeholder.com/26x26" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                      <img
+                        src="https://via.placeholder.com/26x26"
+                        alt="CCGE - Corporate Commerce Global Education"
+                        style="
+                          max-height: 50px;
+                          width: auto;
+                          margin-bottom: 15px;
+                        "
+                      />
                       <a href="#" title="">Helena Brauer</a>
                     </div>
                     <span class="locat"
-                      ><img src="assets/img/loct.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />43 castle road
-                      517 district</span
+                      ><img
+                        src="assets/img/loct.png"
+                        alt="CCGE - Corporate Commerce Global Education"
+                        style="
+                          max-height: 50px;
+                          width: auto;
+                          margin-bottom: 15px;
+                        "
+                      />43 castle road 517 district</span
                     >
                   </div>
                 </div>
-                <!--course-card end-->
+                course-card end
               </div>
-              <!--courses-list end-->
+              courses-list end
               <a href="events.html" title="" class="all-btn"
                 >All Events <i class="fa fa-long-arrow-alt-right"></i
               ></a>
@@ -890,10 +1358,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!--course-section end-->
 
-      <section class="blog-section">
+      <!-- <section class="blog-section">
         <div class="container">
           <div class="section-title text-center">
             <h2>Recent News</h2>
@@ -902,9 +1370,9 @@
               a laoreet erat ornare sit amet. Nulla sagittis faucibus lacusMorbi
               lorem sem, aliquet
             </p>
-          </div>
-          <!--section-title end-->
-          <div class="blog-posts">
+          </div> -->
+      <!--section-title end-->
+      <!-- <div class="blog-posts">
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="blog-post">
@@ -921,10 +1389,15 @@
                       <li><a href="#" title="">17/09/2020</a></li>
                       <li><a href="#" title="">by Admin</a></li>
                       <li>
-                        <img src="assets/img/icon13.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" /><a
-                          href="#"
-                          title=""
-                          >Teachers,</a
+                        <img
+                          src="assets/img/icon13.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                        /><a href="#" title="">Teachers,</a
                         ><a href="#" title=""> School</a>
                       </li>
                     </ul>
@@ -939,9 +1412,9 @@
                       >Read <i class="fa fa-long-arrow-alt-right"></i
                     ></a>
                   </div>
-                </div>
-                <!--blog-post end-->
-              </div>
+                </div> -->
+      <!--blog-post end-->
+      <!-- </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="blog-post">
                   <div class="blog-thumbnail">
@@ -957,10 +1430,15 @@
                       <li><a href="#" title="">17/09/2020</a></li>
                       <li><a href="#" title="">by Admin</a></li>
                       <li>
-                        <img src="assets/img/icon13.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" /><a
-                          href="#"
-                          title=""
-                          >Teachers,</a
+                        <img
+                          src="assets/img/icon13.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                        /><a href="#" title="">Teachers,</a
                         ><a href="#" title=""> School</a>
                       </li>
                     </ul>
@@ -975,9 +1453,9 @@
                       >Read <i class="fa fa-long-arrow-alt-right"></i
                     ></a>
                   </div>
-                </div>
-                <!--blog-post end-->
-              </div>
+                </div> -->
+      <!--blog-post end-->
+      <!-- </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="blog-post">
                   <div class="blog-thumbnail">
@@ -993,10 +1471,15 @@
                       <li><a href="#" title="">17/09/2020</a></li>
                       <li><a href="#" title="">by Admin</a></li>
                       <li>
-                        <img src="assets/img/icon13.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" /><a
-                          href="#"
-                          title=""
-                          >Teachers,</a
+                        <img
+                          src="assets/img/icon13.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                        /><a href="#" title="">Teachers,</a
                         ><a href="#" title=""> School</a>
                       </li>
                     </ul>
@@ -1011,15 +1494,15 @@
                       >Read <i class="fa fa-long-arrow-alt-right"></i
                     ></a>
                   </div>
-                </div>
-                <!--blog-post end-->
-              </div>
+                </div> -->
+      <!--blog-post end-->
+      <!-- </div>
             </div>
-          </div>
-          <!--blog-posts end-->
-        </div>
-      </section>
-            <!--blog-section end-->
+          </div> -->
+      <!--blog-posts end-->
+      <!-- </div>
+      </section> -->
+      <!--blog-section end-->
 
       <!-- Brochure Form Modal -->
       <div id="brochureModal" class="modal fade" tabindex="-1" role="dialog">
@@ -1027,42 +1510,92 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title">Get Your Free Course Brochure</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
               <div class="course-info mb-4">
-                <h6 class="selected-course-title">Course: <span id="selectedCourse">ACCA - Association of Chartered Certified Accountants</span></h6>
-                <p class="course-description">ACCA course equips students with global accounting and finance expertise, opening doors to a range of career opportunities worldwide. Join 200,000+ professionals globally with this prestigious qualification.</p>
+                <h6 class="selected-course-title">
+                  Course:
+                  <span id="selectedCourse"
+                    >ACCA - Association of Chartered Certified Accountants</span
+                  >
+                </h6>
+                <p class="course-description">
+                  ACCA course equips students with global accounting and finance
+                  expertise, opening doors to a range of career opportunities
+                  worldwide. Join 200,000+ professionals globally with this
+                  prestigious qualification.
+                </p>
               </div>
               <form id="brochureForm">
                 <div class="form-group">
                   <label for="brochureName">Full Name *</label>
-                  <input type="text" class="form-control" id="brochureName" name="name" required placeholder="Enter your full name">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="brochureName"
+                    name="name"
+                    required
+                    placeholder="Enter your full name"
+                  />
                 </div>
                 <div class="form-group">
                   <label for="brochureEmail">Email Address *</label>
-                  <input type="email" class="form-control" id="brochureEmail" name="email" required placeholder="Enter your email address">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="brochureEmail"
+                    name="email"
+                    required
+                    placeholder="Enter your email address"
+                  />
                 </div>
                 <div class="form-group">
                   <label for="brochurePhone">Phone Number *</label>
-                  <input type="tel" class="form-control" id="brochurePhone" name="phone" required placeholder="Enter your phone number">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="brochurePhone"
+                    name="phone"
+                    required
+                    placeholder="Enter your phone number"
+                  />
                 </div>
-                
+
                 <div class="form-group">
                   <label for="brochureMessage">Additional Information</label>
-                  <textarea class="form-control" id="brochureMessage" name="message" rows="3" placeholder="Tell us about your background and career goals (optional)"></textarea>
+                  <textarea
+                    class="form-control"
+                    id="brochureMessage"
+                    name="message"
+                    rows="3"
+                    placeholder="Tell us about your background and career goals (optional)"
+                  ></textarea>
                 </div>
                 <div class="form-group">
                   <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="brochureConsent" required>
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="brochureConsent"
+                      required
+                    />
                     <label class="form-check-label" for="brochureConsent">
-                      I agree to receive course information and updates from CCGE
+                      I agree to receive course information and updates from
+                      CCGE
                     </label>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Get Free Brochure</button>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Get Free Brochure
+                </button>
               </form>
             </div>
           </div>
@@ -1075,11 +1608,17 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="widget widget-about">
-                  <img src="assets/img/CCGE Final Logo.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                  <img
+                    src="assets/img/ccge-final-logo.png"
+                    alt="CCGE - Corporate Commerce Global Education"
+                    style="max-height: 50px; width: auto; margin-bottom: 15px"
+                  />
                   <p>
-                    Based in Hyderabad, CCGE is dedicated to empowering finance and accounting professionals 
-                    to reach new heights in their careers. Our mission is to provide accessible, 
-                    industry-relevant education that bridges the gap between academic knowledge and real-world application.
+                    Based in Hyderabad, CCGE is dedicated to empowering finance
+                    and accounting professionals to reach new heights in their
+                    careers. Our mission is to provide accessible,
+                    industry-relevant education that bridges the gap between
+                    academic knowledge and real-world application.
                   </p>
                 </div>
                 <!--widget-about end-->
@@ -1089,7 +1628,15 @@
                   <ul class="contact-add">
                     <li>
                       <div class="contact-info">
-                        <img src="assets/img/icon1.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                        <img
+                          src="assets/img/icon1.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                        />
                         <div class="contact-tt">
                           <h4>Call</h4>
                           <span>96666 60713 / 14</span>
@@ -1099,7 +1646,15 @@
                     </li>
                     <li>
                       <div class="contact-info">
-                        <img src="assets/img/icon2.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                        <img
+                          src="assets/img/icon2.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                        />
                         <div class="contact-tt">
                           <h4>Work Time</h4>
                           <span>Mon - Sat 9 AM - 7 PM</span>
@@ -1109,10 +1664,21 @@
                     </li>
                     <li>
                       <div class="contact-info">
-                        <img src="assets/img/icon3.png" alt="CCGE - Corporate Commerce Global Education" style="max-height: 50px; width: auto; margin-bottom: 15px;" />
+                        <img
+                          src="assets/img/icon3.png"
+                          alt="CCGE - Corporate Commerce Global Education"
+                          style="
+                            max-height: 50px;
+                            width: auto;
+                            margin-bottom: 15px;
+                          "
+                        />
                         <div class="contact-tt">
                           <h4>Address</h4>
-                          <span>Hyderabad, India</span>
+                          <span
+                            >Opp. Madhura Nagar Metro Station,<br />Beside SBI
+                            Bank Lane, Hyderabad.</span
+                          >
                         </div>
                       </div>
                       <!--contact-info end-->
@@ -1125,22 +1691,55 @@
                 <div class="widget widget-links">
                   <h3 class="widget-title">Our Courses</h3>
                   <ul>
-                    <li><a href="class-single-acca.html" title="">ACCA Course</a></li>
-                    <li><a href="class-single-cfa.html" title="">CFA Course</a></li>
-                    <li><a href="class-single-cma.html" title="">CMA Course</a></li>
-                    <li><a href="class-single-cpa.html" title="">CPA Course</a></li>
-                    <li><a href="class-single-frm.html" title="">FRM Course</a></li>
-                    <li><a href="class-single-esg.html" title="">ESG Course</a></li>
-                    <li><a href="class-single-investment-banking.html" title="">Investment Banking</a></li>
-                    <li><a href="class-single-global-investment-banking.html" title="">Global Investment Banking</a></li>
-                    <li><a href="class-single-dipifrs.html" title="">DipIFRS Course</a></li>                  </ul>
+                    <li>
+                      <a href="class-single-acca.html" title="">ACCA Course</a>
+                    </li>
+                    <li>
+                      <a href="class-single-cfa.html" title="">CFA Course</a>
+                    </li>
+                    <li>
+                      <a href="class-single-cma.html" title="">CMA Course</a>
+                    </li>
+                    <li>
+                      <a href="class-single-cpa.html" title="">CPA Course</a>
+                    </li>
+                    <li>
+                      <a href="class-single-frm.html" title="">FRM Course</a>
+                    </li>
+                    <li>
+                      <a href="class-single-esg.html" title="">ESG Course</a>
+                    </li>
+                    <li>
+                      <a href="class-single-investment-banking.html" title=""
+                        >Investment Banking</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="class-single-global-investment-banking.html"
+                        title=""
+                        >Global Investment Banking</a
+                      >
+                    </li>
+                    <li>
+                      <a href="class-single-dipifrs.html" title=""
+                        >DipIFRS Course</a
+                      >
+                    </li>
+                  </ul>
                 </div>
                 <!--widget-links end-->
               </div>
               <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="widget widget-iframe">
                   <iframe
-                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Mumbai%2C%20India+(CCGE%20Education)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.505022878198!2d78.43591307601201!3d17.43552610141488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9149683b9101%3A0xe31db5e0b0edd928!2sCorporate%20Commerce%20College!5e0!3m2!1sen!2sin!4v1756971584045!5m2!1sen!2sin"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
                 <!--widget-iframe end-->
@@ -1152,7 +1751,8 @@
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <p>
-                  © 2025 CCGE - Corporate Commerce Global Education. All rights reserved.
+                  © 2025 CCGE - Corporate Commerce Global Education. All rights
+                  reserved.
                 </p>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6">
@@ -1191,108 +1791,122 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/navigation.js"></script>
-    
+
     <!-- Brochure Form JavaScript -->
     <script>
-      $(document).ready(function() {
-
+      $(document).ready(function () {
         // Course descriptions for modal
         const courseDescriptions = {
-          'ACCA - Association of Chartered Certified Accountants': 'ACCA course equips students with global accounting and finance expertise, opening doors to a range of career opportunities worldwide. Join 200,000+ professionals globally with this prestigious qualification.',
-          'CFA - Chartered Financial Analyst': 'The CFA program prepares students for a career in investment management and financial analysis, with a globally recognized curriculum. Join the elite 1% of finance professionals worldwide.',
-          'CMA - Certified Management Accountant': 'US CMA course is a globally accepted management accounting qualification offered by the Institute for Management Accountants, USA. Fast-track your career in strategic finance and management accounting.',
-          'CPA - Certified Public Accountant': 'CPA is a globally recognized Chartered Accountancy course by AICPA, USA. It offers excellent career opportunities in India and abroad in accounting, auditing, and finance.',
-          'FRM - Financial Risk Manager': 'FRM by the Global Association of Risk Professionals (GARP, USA) is designed to equip professionals to manage business risks. Become a certified risk management expert.',
-          'ESG - Post Graduate Program in ESG': 'ESG certification is about companies focusing on making money and being good to the planet and running their businesses transparently and ethically.',
-          'Post Graduate Program in Investment Banking': 'The Investment Banking course provides essential skills and hands-on training for a successful career in financial analysis and deal structuring.',
-          'Global Investment Banking Certification': 'GIB - Global Investment Banking empowers you to master deals, mergers, and financial advisory with global career opportunities.',
-          'DipIFRS - Diploma in International Financial Reporting': 'IFRS certification stands for International Financial Reporting Standards, is a universally recognised accounting standard.'
+          "ACCA - Association of Chartered Certified Accountants":
+            "ACCA course equips students with global accounting and finance expertise, opening doors to a range of career opportunities worldwide. Join 200,000+ professionals globally with this prestigious qualification.",
+          "CFA - Chartered Financial Analyst":
+            "The CFA program prepares students for a career in investment management and financial analysis, with a globally recognized curriculum. Join the elite 1% of finance professionals worldwide.",
+          "CMA - Certified Management Accountant":
+            "US CMA course is a globally accepted management accounting qualification offered by the Institute for Management Accountants, USA. Fast-track your career in strategic finance and management accounting.",
+          "CPA - Certified Public Accountant":
+            "CPA is a globally recognized Chartered Accountancy course by AICPA, USA. It offers excellent career opportunities in India and abroad in accounting, auditing, and finance.",
+          "FRM - Financial Risk Manager":
+            "FRM by the Global Association of Risk Professionals (GARP, USA) is designed to equip professionals to manage business risks. Become a certified risk management expert.",
+          "ESG - Post Graduate Program in ESG":
+            "ESG certification is about companies focusing on making money and being good to the planet and running their businesses transparently and ethically.",
+          "Post Graduate Program in Investment Banking":
+            "The Investment Banking course provides essential skills and hands-on training for a successful career in financial analysis and deal structuring.",
+          "Global Investment Banking Certification":
+            "GIB - Global Investment Banking empowers you to master deals, mergers, and financial advisory with global career opportunities.",
+          "DipIFRS - Diploma in International Financial Reporting":
+            "IFRS certification stands for International Financial Reporting Standards, is a universally recognised accounting standard.",
         };
 
         // Handle brochure button clicks
-        $('.get-brochure-btn').click(function(e) {
+        $(".get-brochure-btn").click(function (e) {
           e.preventDefault();
-          const course = $(this).data('course');
-          
+          const course = $(this).data("course");
+
           // Update modal content
-          $('#selectedCourse').text(course);
-          $('.course-description').text(courseDescriptions[course] || 'Transform your career with our comprehensive program designed specifically for Indian CAs and finance professionals.');
-          
+          $("#selectedCourse").text(course);
+          $(".course-description").text(
+            courseDescriptions[course] ||
+              "Transform your career with our comprehensive program designed specifically for Indian CAs and finance professionals.",
+          );
+
           // Show modal
-          $('#brochureModal').modal('show');
+          $("#brochureModal").modal("show");
         });
 
         // Handle form submission
-        $('#brochureForm').submit(function(e) {
+        $("#brochureForm").submit(function (e) {
           e.preventDefault();
-          
+
           const formData = {
-            name: $('#brochureName').val(),
-            email: $('#brochureEmail').val(),
-            phone: $('#brochurePhone').val(),
-            course: $('#selectedCourse').text(),
-            message: $('#brochureMessage').val()
+            name: $("#brochureName").val(),
+            email: $("#brochureEmail").val(),
+            phone: $("#brochurePhone").val(),
+            course: $("#selectedCourse").text(),
+            message: $("#brochureMessage").val(),
           };
 
           // Format WhatsApp message
           const whatsappMessage = formatWhatsAppMessage(formData);
-          
+
           // Submit to Google Form
-          console.log('Submitting to Google Form:', formData);
-          
-          const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeK6uLwLrniG_JjHpcHcy8zURJ7kyUI73JVXFrdoO0m0Vs76A/formResponse';
-          
+          console.log("Submitting to Google Form:", formData);
+
+          const formUrl =
+            "https://docs.google.com/forms/d/e/1FAIpQLSeK6uLwLrniG_JjHpcHcy8zURJ7kyUI73JVXFrdoO0m0Vs76A/formResponse";
+
           // Create form data for Google Forms
           const googleFormData = new FormData();
-          googleFormData.append('entry.722333845', formData.name); // Name
-          googleFormData.append('entry.1975402017', formData.email); // Email
-          googleFormData.append('entry.1789869', formData.phone); // Phone
-          googleFormData.append('entry.1909450583', formData.course); // Course
-          googleFormData.append('entry.1394785474', formData.message || ''); // Message
-          
+          googleFormData.append("entry.722333845", formData.name); // Name
+          googleFormData.append("entry.1975402017", formData.email); // Email
+          googleFormData.append("entry.1789869", formData.phone); // Phone
+          googleFormData.append("entry.1909450583", formData.course); // Course
+          googleFormData.append("entry.1394785474", formData.message || ""); // Message
+
           // Submit to Google Form (this will redirect, so we use a hidden iframe)
-          const iframe = document.createElement('iframe');
-          iframe.style.display = 'none';
-          iframe.name = 'google-form-submit';
+          const iframe = document.createElement("iframe");
+          iframe.style.display = "none";
+          iframe.name = "google-form-submit";
           document.body.appendChild(iframe);
-          
-          const form = document.createElement('form');
-          form.method = 'POST';
+
+          const form = document.createElement("form");
+          form.method = "POST";
           form.action = formUrl;
-          form.target = 'google-form-submit';
-          
+          form.target = "google-form-submit";
+
           // Add form fields
           const fields = [
-            { name: 'entry.722333845', value: formData.name },
-            { name: 'entry.1975402017', value: formData.email },
-            { name: 'entry.1789869', value: formData.phone },
-            { name: 'entry.1909450583', value: formData.course },
-            { name: 'entry.1394785474', value: formData.message || '' }
+            { name: "entry.722333845", value: formData.name },
+            { name: "entry.1975402017", value: formData.email },
+            { name: "entry.1789869", value: formData.phone },
+            { name: "entry.1909450583", value: formData.course },
+            { name: "entry.1394785474", value: formData.message || "" },
           ];
-          
-          fields.forEach(field => {
-            const input = document.createElement('input');
-            input.type = 'hidden';
+
+          fields.forEach((field) => {
+            const input = document.createElement("input");
+            input.type = "hidden";
             input.name = field.name;
             input.value = field.value;
             form.appendChild(input);
           });
-          
+
           document.body.appendChild(form);
           form.submit();
-          
+
           // Clean up
           setTimeout(() => {
             document.body.removeChild(form);
             document.body.removeChild(iframe);
           }, 1000);
-          
-          console.log('Google Form submission completed');
-          
+
+          console.log("Google Form submission completed");
+
           // Open WhatsApp with pre-filled message
-          const whatsappUrl = `https://wa.me/919390418860?text=${encodeURIComponent(whatsappMessage)}`;
-          window.open(whatsappUrl, '_blank');
-          
+          const whatsappUrl = `https://wa.me/919390418860?text=${encodeURIComponent(
+            whatsappMessage,
+          )}`;
+          window.open(whatsappUrl, "_blank");
+
           // Show thank you message immediately
           showThankYouMessage();
         });
@@ -1304,9 +1918,9 @@
 📧 *Email:* ${data.email}
 📱 *Phone:* ${data.phone}
 📚 *Course Interest:* ${data.course}
-💬 *Additional Info:* ${data.message || 'Not provided'}
+💬 *Additional Info:* ${data.message || "Not provided"}
 
-⏰ *Request Time:* ${new Date().toLocaleString('en-IN')}
+⏰ *Request Time:* ${new Date().toLocaleString("en-IN")}
 
 ---
 *This lead was generated from the CCGE website brochure form.*`;
@@ -1314,7 +1928,7 @@
 
         function showThankYouMessage() {
           // Replace modal content with thank you message
-          const modalBody = $('.modal-body');
+          const modalBody = $(".modal-body");
           modalBody.html(`
             <div class="text-center py-5">
               <div class="thank-you-icon mb-4">
@@ -1343,97 +1957,105 @@
 
         function showSuccessMessage() {
           // Create success alert
-          const alert = $('<div class="alert alert-success alert-dismissible fade show" role="alert" style="position: fixed; top: 20px; right: 20px; z-index: 9999; min-width: 300px;">' +
-            '<strong>Success!</strong> Your brochure request has been sent. We\'ll contact you shortly.' +
-            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
-            '<span aria-hidden="true">&times;</span>' +
-            '</button>' +
-            '</div>');
-          
-          $('body').append(alert);
-          
+          const alert = $(
+            '<div class="alert alert-success alert-dismissible fade show" role="alert" style="position: fixed; top: 20px; right: 20px; z-index: 9999; min-width: 300px;">' +
+              "<strong>Success!</strong> Your brochure request has been sent. We'll contact you shortly." +
+              '<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
+              '<span aria-hidden="true">&times;</span>' +
+              "</button>" +
+              "</div>",
+          );
+
+          $("body").append(alert);
+
           // Auto remove after 5 seconds
-          setTimeout(function() {
-            alert.alert('close');
+          setTimeout(function () {
+            alert.alert("close");
           }, 5000);
         }
       });
     </script>
-    
+
     <!-- Search Functionality Script -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const searchInput = document.getElementById('searchInput');
-        const searchResults = document.getElementById('searchResults');
-        const searchForm = document.getElementById('searchForm');
-        
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("searchInput");
+        const searchResults = document.getElementById("searchResults");
+        const searchForm = document.getElementById("searchForm");
+
         // Available courses
         const courses = [
-          { name: 'ACCA Course', url: 'class-single-acca.html' },
-          { name: 'CFA Course', url: 'class-single-cfa.html' },
-          { name: 'CMA Course', url: 'class-single-cma.html' },
-          { name: 'CPA Course', url: 'class-single-cpa.html' },
-          { name: 'FRM Course', url: 'class-single-frm.html' },
-          { name: 'ESG Course', url: 'class-single-esg.html' },
-          { name: 'Investment Banking Operations', url: 'class-single-investment-banking.html' },
-          { name: 'Global Investment Banking', url: 'class-single-global-investment-banking.html' },
-          { name: 'DipIFRS Course', url: 'class-single-dipifrs.html' }
+          { name: "ACCA Course", url: "class-single-acca.html" },
+          { name: "CFA Course", url: "class-single-cfa.html" },
+          { name: "CMA Course", url: "class-single-cma.html" },
+          { name: "CPA Course", url: "class-single-cpa.html" },
+          { name: "FRM Course", url: "class-single-frm.html" },
+          { name: "ESG Course", url: "class-single-esg.html" },
+          {
+            name: "Investment Banking Operations",
+            url: "class-single-investment-banking.html",
+          },
+          {
+            name: "Global Investment Banking",
+            url: "class-single-global-investment-banking.html",
+          },
+          { name: "DipIFRS Course", url: "class-single-dipifrs.html" },
         ];
-        
+
         // Search functionality
-        searchInput.addEventListener('input', function() {
+        searchInput.addEventListener("input", function () {
           const query = this.value.trim().toLowerCase();
-          
+
           if (query.length === 0) {
-            searchResults.classList.remove('show');
+            searchResults.classList.remove("show");
             return;
           }
-          
+
           // Filter courses based on search query
-          const filteredCourses = courses.filter(course => 
-            course.name.toLowerCase().includes(query)
+          const filteredCourses = courses.filter((course) =>
+            course.name.toLowerCase().includes(query),
           );
-          
+
           // Display results
           displaySearchResults(filteredCourses, query);
         });
-        
+
         // Handle form submission
-        searchForm.addEventListener('submit', function(e) {
+        searchForm.addEventListener("submit", function (e) {
           e.preventDefault();
           const query = searchInput.value.trim();
-          
+
           if (query.length === 0) return;
-          
+
           // Check if any course matches
-          const matchingCourse = courses.find(course => 
-            course.name.toLowerCase().includes(query.toLowerCase())
+          const matchingCourse = courses.find((course) =>
+            course.name.toLowerCase().includes(query.toLowerCase()),
           );
-          
+
           if (matchingCourse) {
             // Redirect to the matching course
             window.location.href = matchingCourse.url;
           } else {
             // Redirect to courses page if no match found
-            window.location.href = 'classes.html';
+            window.location.href = "classes.html";
           }
         });
-        
+
         // Handle clicking outside to close results
-        document.addEventListener('click', function(e) {
+        document.addEventListener("click", function (e) {
           if (!searchForm.contains(e.target)) {
-            searchResults.classList.remove('show');
+            searchResults.classList.remove("show");
           }
         });
-        
+
         // Handle keyboard navigation
-        searchInput.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape') {
-            searchResults.classList.remove('show');
+        searchInput.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            searchResults.classList.remove("show");
             this.blur();
           }
         });
-        
+
         function displaySearchResults(filteredCourses, query) {
           if (filteredCourses.length === 0) {
             // No results found - show sorry message with link
@@ -1445,14 +2067,18 @@
             `;
           } else {
             // Show matching courses
-            searchResults.innerHTML = filteredCourses.map(course => `
+            searchResults.innerHTML = filteredCourses
+              .map(
+                (course) => `
               <div class="search-result-item">
                 <a href="${course.url}">${course.name}</a>
               </div>
-            `).join('');
+            `,
+              )
+              .join("");
           }
-          
-          searchResults.classList.add('show');
+
+          searchResults.classList.add("show");
         }
       });
     </script>
