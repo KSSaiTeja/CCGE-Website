@@ -447,6 +447,17 @@
                 </li>
               </ul>
               <!--contact-information end-->
+              <div class="register-btn">
+                <button
+                  type="button"
+                  class="btn btn-primary register-now-btn"
+                  data-toggle="modal"
+                  data-target="#registerModal"
+                >
+                  Register Now
+                </button>
+              </div>
+              <!--register-btn end-->
               <div class="menu-btn">
                 <a href="#">
                   <span class="bar1"></span>
@@ -3352,6 +3363,312 @@
           // rzp.open();
         });
       });
+    </script>
+
+    <!-- Register Now Modal -->
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Register Now</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="registerForm">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  name="fullName"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Course Interested In *</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="course"
+                    id="eaCourse"
+                    value="EA Course - US Taxation"
+                    required
+                  />
+                  <label class="form-check-label" for="eaCourse">
+                    EA Course - US Taxation
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="course"
+                    id="ukTax"
+                    value="UK Taxation & Accounting"
+                    required
+                  />
+                  <label class="form-check-label" for="ukTax">
+                    UK Taxation & Accounting
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <small class="text-muted">* Required fields</small>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="submitRegisterForm"
+            >
+              Submit Registration
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Styles for Register Button and Modal -->
+    <style>
+      .register-btn {
+        margin-left: 20px;
+      }
+
+      .register-now-btn {
+        background: linear-gradient(45deg, #156788, #1260a0);
+        border: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(21, 103, 136, 0.3);
+      }
+
+      .register-now-btn:hover {
+        background: linear-gradient(45deg, #1260a0, #156788);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(21, 103, 136, 0.4);
+      }
+
+      #registerModal .modal-content {
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      #registerModal .modal-header {
+        background: linear-gradient(45deg, #156788, #1260a0);
+        color: white;
+        border-radius: 15px 15px 0 0;
+      }
+
+      #registerModal .close {
+        color: white;
+        opacity: 1;
+      }
+
+      #registerModal .close:hover {
+        color: white;
+        opacity: 0.8;
+      }
+
+      #registerModal .form-control {
+        border-radius: 8px;
+        border: 2px solid #e9ecef;
+        padding: 12px 15px;
+        transition: all 0.3s ease;
+      }
+
+      #registerModal .form-control:focus {
+        border-color: #156788;
+        box-shadow: 0 0 0 0.2rem rgba(21, 103, 136, 0.25);
+      }
+
+      #registerModal .form-check-input:checked {
+        background-color: #156788;
+        border-color: #156788;
+      }
+
+      #registerModal .btn-primary {
+        background: linear-gradient(45deg, #156788, #1260a0);
+        border: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-weight: 600;
+      }
+
+      #registerModal .btn-primary:hover {
+        background: linear-gradient(45deg, #1260a0, #156788);
+        transform: translateY(-1px);
+      }
+
+      @media (max-width: 768px) {
+        .register-btn {
+          margin-left: 10px;
+        }
+
+        .register-now-btn {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      }
+    </style>
+
+    <!-- Register Form JavaScript -->
+    <script>
+      document
+        .getElementById("submitRegisterForm")
+        .addEventListener("click", function () {
+          const form = document.getElementById("registerForm");
+          const formData = new FormData(form);
+
+          // Validate form
+          const fullName = formData.get("fullName");
+          const email = formData.get("email");
+          const phone = formData.get("phone");
+          const course = formData.get("course");
+
+          if (!fullName || !email || !phone || !course) {
+            alert("Please fill in all required fields.");
+            return;
+          }
+
+          // Email validation
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+          }
+
+          // Phone validation (basic)
+          const phoneRegex = /^[0-9+\-\s()]{10,}$/;
+          if (!phoneRegex.test(phone.replace(/\s/g, ""))) {
+            alert("Please enter a valid phone number.");
+            return;
+          }
+
+          // Prepare data for submission
+          const registrationData = {
+            fullName: fullName,
+            email: email,
+            phone: phone,
+            course: course,
+            timestamp: new Date().toISOString(),
+          };
+
+          // Google Form submission (using existing form)
+          const googleFormUrl =
+            "https://docs.google.com/forms/d/e/1FAIpQLSeK6uLwLrniG_JjHpcHcy8zURJ7kyUI73JVXFrdoO0m0Vs76A/formResponse";
+          const googleFormData = new URLSearchParams();
+          googleFormData.append("entry.722333845", fullName); // Name
+          googleFormData.append("entry.1975402017", email); // Email
+          googleFormData.append("entry.1789869", phone); // Phone
+          googleFormData.append("entry.1909450583", course); // Course
+          googleFormData.append(
+            "entry.1394785474",
+            "Registration from Register Now button",
+          ); // Message
+
+          // Submit to Google Form
+          fetch(googleFormUrl, {
+            method: "POST",
+            mode: "no-cors",
+            body: googleFormData,
+          })
+            .then(() => {
+              // Prepare WhatsApp message
+              const whatsappMessage = `New Registration:
+Name: ${fullName}
+Email: ${email}
+Phone: ${phone}
+Course: ${course}
+Timestamp: ${new Date().toLocaleString()}`;
+
+              const whatsappUrl = `https://wa.me/919666660713?text=${encodeURIComponent(
+                whatsappMessage,
+              )}`;
+
+              // Open WhatsApp
+              window.open(whatsappUrl, "_blank");
+
+              // Show success message
+              alert(
+                "Registration submitted successfully! Opening WhatsApp for confirmation.",
+              );
+
+              // Reset form and close modal
+              form.reset();
+              $("#registerModal").modal("hide");
+            })
+            .catch((error) => {
+              console.error("Error submitting form:", error);
+              alert(
+                "Registration submitted! Please check WhatsApp for confirmation.",
+              );
+
+              // Still open WhatsApp even if Google Form fails
+              const whatsappMessage = `New Registration:
+Name: ${fullName}
+Email: ${email}
+Phone: ${phone}
+Course: ${course}
+Timestamp: ${new Date().toLocaleString()}`;
+
+              const whatsappUrl = `https://wa.me/919666660713?text=${encodeURIComponent(
+                whatsappMessage,
+              )}`;
+              window.open(whatsappUrl, "_blank");
+
+              // Reset form and close modal
+              form.reset();
+              $("#registerModal").modal("hide");
+            });
+        });
     </script>
   </body>
 </html>

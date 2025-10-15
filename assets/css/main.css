@@ -308,9 +308,9 @@ header .header-content .logo {
 }
 header .header-content .contact-add {
   margin-left: auto;
-  -ms-flex: 0 0 57.5%;
-  flex: 0 0 57.5%;
-  max-width: 57.5%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 header .header-content .contact-add li {
   -ms-flex: 0 0 33.33%;
@@ -337,6 +337,28 @@ header .header-content .contact-add li .contact-info .contact-tt > span {
   display: block;
   color: var(--text-muted);
   font-size: 14px;
+}
+header .header-content .register-btn {
+  margin-left: 20px;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+header .header-content .register-btn .register-now-btn {
+  background: linear-gradient(45deg, #156788, #1260a0);
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(21, 103, 136, 0.3);
+  color: white;
+}
+header .header-content .register-btn .register-now-btn:hover {
+  background: linear-gradient(45deg, #1260a0, #156788);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(21, 103, 136, 0.4);
+  color: white;
 }
 header .navigation-bar {
   padding: 23px 0 25px;

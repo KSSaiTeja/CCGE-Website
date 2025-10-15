@@ -72,7 +72,12 @@
                 <!--contact-info end-->
               </li>
             </ul>
-            <!--contact-information end-->
+            <!--contact-information end-->\n              <div class="register-btn">
+                <button type="button" class="btn btn-primary register-now-btn" data-bs-toggle="modal" data-bs-target="#registerModal">
+                  Register Now
+                </button>
+              </div>
+              <!--register-btn end-->
             <div class="menu-btn">
               <a href="#">
                 <span class="bar1"></span>
@@ -632,5 +637,230 @@
     <script src="assets/js/tweenMax.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-  </body>
+  
+    <!-- Register Now Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Register Now</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="registerForm">
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Course Interested In *</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="course" id="eaCourse" value="EA Course - US Taxation" required>
+                  <label class="form-check-label" for="eaCourse">
+                    EA Course - US Taxation
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="course" id="ukTax" value="UK Taxation & Accounting" required>
+                  <label class="form-check-label" for="ukTax">
+                    UK Taxation & Accounting
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <small class="text-muted">* Required fields</small>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="submitRegisterForm">Submit Registration</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Styles for Register Button and Modal -->
+    <style>
+      .register-btn {
+        margin-left: 20px;
+      }
+      
+      .register-now-btn {
+        background: linear-gradient(45deg, #156788, #1260a0);
+        border: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(21, 103, 136, 0.3);
+      }
+      
+      .register-now-btn:hover {
+        background: linear-gradient(45deg, #1260a0, #156788);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(21, 103, 136, 0.4);
+      }
+      
+      #registerModal .modal-content {
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+      
+      #registerModal .modal-header {
+        background: linear-gradient(45deg, #156788, #1260a0);
+        color: white;
+        border-radius: 15px 15px 0 0;
+      }
+      
+      #registerModal .btn-close {
+        filter: invert(1);
+      }
+      
+      #registerModal .form-control {
+        border-radius: 8px;
+        border: 2px solid #e9ecef;
+        padding: 12px 15px;
+        transition: all 0.3s ease;
+      }
+      
+      #registerModal .form-control:focus {
+        border-color: #156788;
+        box-shadow: 0 0 0 0.2rem rgba(21, 103, 136, 0.25);
+      }
+      
+      #registerModal .form-check-input:checked {
+        background-color: #156788;
+        border-color: #156788;
+      }
+      
+      #registerModal .btn-primary {
+        background: linear-gradient(45deg, #156788, #1260a0);
+        border: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-weight: 600;
+      }
+      
+      #registerModal .btn-primary:hover {
+        background: linear-gradient(45deg, #1260a0, #156788);
+        transform: translateY(-1px);
+      }
+      
+      @media (max-width: 768px) {
+        .register-btn {
+          margin-left: 10px;
+        }
+        
+        .register-now-btn {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      }
+    </style>
+
+    <!-- Register Form JavaScript -->
+    <script>
+      document.getElementById('submitRegisterForm').addEventListener('click', function() {
+        const form = document.getElementById('registerForm');
+        const formData = new FormData(form);
+        
+        // Validate form
+        const fullName = formData.get('fullName');
+        const email = formData.get('email');
+        const phone = formData.get('phone');
+        const course = formData.get('course');
+        
+        if (!fullName || !email || !phone || !course) {
+          alert('Please fill in all required fields.');
+          return;
+        }
+        
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert('Please enter a valid email address.');
+          return;
+        }
+        
+        // Phone validation (basic)
+        const phoneRegex = /^[0-9+\-\s()]{10,}$/;
+        if (!phoneRegex.test(phone.replace(/\s/g, ''))) {
+          alert('Please enter a valid phone number.');
+          return;
+        }
+        
+        // Prepare data for submission
+        const registrationData = {
+          fullName: fullName,
+          email: email,
+          phone: phone,
+          course: course,
+          timestamp: new Date().toISOString()
+        };
+        
+        // Google Form submission (replace with your actual Google Form URL)
+        const googleFormUrl = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse';
+        const googleFormData = new URLSearchParams();
+        googleFormData.append('entry.YOUR_FIELD_ID_1', fullName);
+        googleFormData.append('entry.YOUR_FIELD_ID_2', email);
+        googleFormData.append('entry.YOUR_FIELD_ID_3', phone);
+        googleFormData.append('entry.YOUR_FIELD_ID_4', course);
+        
+        // Submit to Google Form
+        fetch(googleFormUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          body: googleFormData
+        }).then(() => {
+          // Prepare WhatsApp message
+          const whatsappMessage = `New Registration:
+Name: ${fullName}
+Email: ${email}
+Phone: ${phone}
+Course: ${course}
+Timestamp: ${new Date().toLocaleString()}`;
+          
+          const whatsappUrl = `https://wa.me/919666660713?text=${encodeURIComponent(whatsappMessage)}`;
+          
+          // Open WhatsApp
+          window.open(whatsappUrl, '_blank');
+          
+          // Show success message
+          alert('Registration submitted successfully! Opening WhatsApp for confirmation.');
+          
+          // Reset form and close modal
+          form.reset();
+          bootstrap.Modal.getInstance(document.getElementById('registerModal')).hide();
+        }).catch(error => {
+          console.error('Error submitting form:', error);
+          alert('Registration submitted! Please check WhatsApp for confirmation.');
+          
+          // Still open WhatsApp even if Google Form fails
+          const whatsappMessage = `New Registration:
+Name: ${fullName}
+Email: ${email}
+Phone: ${phone}
+Course: ${course}
+Timestamp: ${new Date().toLocaleString()}`;
+          
+          const whatsappUrl = `https://wa.me/919666660713?text=${encodeURIComponent(whatsappMessage)}`;
+          window.open(whatsappUrl, '_blank');
+          
+          // Reset form and close modal
+          form.reset();
+          bootstrap.Modal.getInstance(document.getElementById('registerModal')).hide();
+        });
+      });
+    </script>\n  </body>
 </html>
